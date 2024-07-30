@@ -77,7 +77,6 @@ app.post("/users/sign_up", async (req, res) => {
   // main().catch(console.error);
   try {
     const userData = req.body;
-    console.log(userData);
 
     const info = await transporter.sendMail({
       from: `fareedah ${userData?.from}`, // sender address
